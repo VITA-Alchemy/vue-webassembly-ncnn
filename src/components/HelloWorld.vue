@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h3>ncnn webassembly nanodet</h3>
+    <h3>vue ncnn webassembly nanodet demo</h3>
     <button @click="open" style="height: 30px">Start</button>
     <button @click="close" style="height: 30px">End</button>
     <div>
