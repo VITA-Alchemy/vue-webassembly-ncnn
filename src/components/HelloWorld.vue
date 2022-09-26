@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { simd, threads } from "./../../deploy/wasmFeatureDetect.js";
+import { simd, threads } from "./../../public/wasmFeatureDetect.js";
 
 export default {
   name: "HandModel",
@@ -41,10 +41,8 @@ export default {
       var has_simd;
       var has_threads;
       simd().then((simdSupported) => {
-        console.log("5");
         has_simd = simdSupported;
         threads().then((threadsSupported) => {
-          console.log("4");
           has_threads = threadsSupported;
           if (has_simd) {
             if (has_threads) {
@@ -154,7 +152,6 @@ export default {
       };
     },
     capture() {
-      console.log("7");
       this.video = document.querySelector("video");
       var constraints = {
         audio: false,
