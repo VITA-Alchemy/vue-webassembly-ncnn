@@ -1,24 +1,25 @@
 # vue-webassembly-ncnn
 
-#说明
+# 说明
 
+根据nihui/ncnn-webassembly-nanodet项目改写成vue代码。
 
-# 环境
+# ENV
 ```bash
 emsdk 2.0.8
 ncnn-20220729-webassembly
 vue 2.6.11
 ```
 
-# 流程
-## npm启动
+# RUN
+### npm
 ```bash
 git clone https://github.com/VITA-Alchemy/vue-webassembly-ncnn.git
 cd vue-webassembly-ncnn
 npm install
 npm run serve
 ```
-## python启动
+### python flask
 ```bash
 git clone https://github.com/VITA-Alchemy/vue-webassembly-ncnn.git
 cd vue-webassembly-ncnn
