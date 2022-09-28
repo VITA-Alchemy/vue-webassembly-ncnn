@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     async checkWasmSupportAndLoad() {
+      var Module = {};
       var w = 420;
       var h = 320;
       let img = new Image();
